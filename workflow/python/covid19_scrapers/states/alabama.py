@@ -4,7 +4,6 @@ from covid19_scrapers.scraper import ScraperBase
 from covid19_scrapers.utils.arcgis import query_geoservice
 from covid19_scrapers.utils.misc import to_percentage
 
-
 _logger = logging.getLogger(__name__)
 
 

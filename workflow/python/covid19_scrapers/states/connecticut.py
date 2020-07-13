@@ -1,10 +1,11 @@
 import logging
-import pydash
 from datetime import datetime
 
+import pydash
+
 from covid19_scrapers.scraper import ScraperBase
-from covid19_scrapers.utils.misc import to_percentage
 from covid19_scrapers.utils.http import get_json
+from covid19_scrapers.utils.misc import to_percentage
 
 _logger = logging.getLogger(__name__)
 

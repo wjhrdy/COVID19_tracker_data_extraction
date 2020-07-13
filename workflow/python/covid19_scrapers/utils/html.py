@@ -1,14 +1,13 @@
 import logging
 import re
 
-from bs4 import BeautifulSoup
-from bs4.dammit import EncodingDetector
 import pandas as pd
 import requests
+from bs4 import BeautifulSoup
+from bs4.dammit import EncodingDetector
 
 from covid19_scrapers.utils.http import get_cached_url
 from covid19_scrapers.utils.parse import maybe_convert
-
 
 _logger = logging.getLogger(__name__)
 

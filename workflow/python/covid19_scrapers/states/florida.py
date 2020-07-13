@@ -1,21 +1,21 @@
 import datetime
-from io import BytesIO
 import logging
 import re
+from io import BytesIO
+from urllib.parse import urljoin
 
 import fitz
+# Backwards compatibility for datetime_fromisoformat for Python 3.6 and below
+# Has no effect for Python 3.7 and above
+# Reference: https://pypi.org/project/backports-datetime-fromisoformat/
+from backports.datetime_fromisoformat import MonkeyPatch
 from tabula import read_pdf
-from urllib.parse import urljoin
 
 from covid19_scrapers.scraper import ScraperBase
 from covid19_scrapers.utils.html import url_to_soup
 from covid19_scrapers.utils.http import get_content
 from covid19_scrapers.utils.misc import as_list
 
-# Backwards compatibility for datetime_fromisoformat for Python 3.6 and below
-# Has no effect for Python 3.7 and above
-# Reference: https://pypi.org/project/backports-datetime-fromisoformat/
-from backports.datetime_fromisoformat import MonkeyPatch
 MonkeyPatch.patch_fromisoformat()
 
 

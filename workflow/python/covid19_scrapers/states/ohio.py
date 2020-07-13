@@ -1,7 +1,6 @@
-from covid19_scrapers.scraper import ScraperBase
-
 import logging
 
+from covid19_scrapers.scraper import ScraperBase
 
 _logger = logging.getLogger(__name__)
 

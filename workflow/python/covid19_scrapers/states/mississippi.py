@@ -11,7 +11,6 @@ from covid19_scrapers.utils.html import find_all_links
 from covid19_scrapers.utils.http import download_file
 from covid19_scrapers.utils.misc import as_list, to_percentage
 
-
 _logger = logging.getLogger(__name__)
 
 

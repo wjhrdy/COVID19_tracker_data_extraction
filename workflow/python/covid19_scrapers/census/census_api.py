@@ -6,7 +6,6 @@ import pandas as pd
 from covid19_scrapers.census.fips_lookup import FipsLookup
 from covid19_scrapers.utils.http import get_content_as_file, get_json
 
-
 _logger = logging.getLogger(__name__)
 
 

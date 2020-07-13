@@ -10,8 +10,7 @@ from covid19_scrapers.utils.html import url_to_soup
 from covid19_scrapers.utils.http import get_content_as_file
 from covid19_scrapers.utils.misc import to_percentage
 from covid19_scrapers.utils.parse import raw_string_to_int
-from covid19_scrapers.webdriver import WebdriverSteps, WebdriverRunner
-
+from covid19_scrapers.webdriver import WebdriverRunner, WebdriverSteps
 
 _logger = logging.getLogger(__name__)
 

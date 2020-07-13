@@ -1,12 +1,12 @@
 import os
 from pathlib import Path
 
-from covid19_scrapers.census import CensusApi
-from covid19_scrapers.registry import Registry
-from covid19_scrapers.scraper import ScraperBase
 # We load states for ScraperBase.__subclasses__ to work. So we disable
 # the unused import lint warning.
 import covid19_scrapers.states  # noqa: F401
+from covid19_scrapers.census import CensusApi
+from covid19_scrapers.registry import Registry
+from covid19_scrapers.scraper import ScraperBase
 from covid19_scrapers.utils import UTILS_WEB_CACHE
 from covid19_scrapers.web_cache import WebCache
 

@@ -1,15 +1,14 @@
 import datetime
-from io import BytesIO
-import re
-
-from github import Github
 import logging
+import re
+from io import BytesIO
+
 import pandas as pd
+from github import Github
 
 from covid19_scrapers.census import get_aa_pop_stats
 from covid19_scrapers.scraper import ScraperBase
 from covid19_scrapers.utils.misc import to_percentage
-
 
 _logger = logging.getLogger(__name__)
 

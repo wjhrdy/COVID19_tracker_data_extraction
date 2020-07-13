@@ -1,8 +1,7 @@
-from collections import defaultdict, namedtuple
 import logging
+from collections import defaultdict, namedtuple
 
 from seleniumwire import webdriver
-
 
 _logger = logging.getLogger(__name__)
 

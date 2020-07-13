@@ -1,15 +1,15 @@
 import datetime
 import logging
-import pandas as pd
 import re
 from urllib.parse import urljoin, urlsplit
+
+import pandas as pd
 
 from covid19_scrapers.census import get_aa_pop_stats
 from covid19_scrapers.scraper import ScraperBase
 from covid19_scrapers.utils.html import find_all_links
 from covid19_scrapers.utils.http import download_file
 from covid19_scrapers.utils.misc import to_percentage
-
 
 _logger = logging.getLogger(__name__)
 

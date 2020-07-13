@@ -3,10 +3,9 @@ import logging
 import re
 import string
 
+from covid19_scrapers.scraper import ScraperBase
 from covid19_scrapers.utils.html import table_to_dataframe, url_to_soup
 from covid19_scrapers.utils.parse import raw_string_to_int
-from covid19_scrapers.scraper import ScraperBase
-
 
 _logger = logging.getLogger(__name__)
 

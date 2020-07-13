@@ -1,12 +1,12 @@
 import re
 
-from bs4 import BeautifulSoup
 import pandas as pd
 import pytest
 import requests
+from bs4 import BeautifulSoup
 
+from covid19_scrapers import utils as utils
 from covid19_scrapers.utils.testing import fake_webcache
-import covid19_scrapers.utils as utils
 
 
 def test_url_to_soup():

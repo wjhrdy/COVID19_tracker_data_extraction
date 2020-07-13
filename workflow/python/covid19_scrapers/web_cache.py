@@ -6,7 +6,6 @@ from urllib.parse import urldefrag
 
 import requests
 
-
 _logger = logging.getLogger(__name__)
 
 

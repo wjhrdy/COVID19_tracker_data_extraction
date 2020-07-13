@@ -1,16 +1,17 @@
 import abc
 import enum
-from copy import deepcopy
 import logging
+from copy import deepcopy
 
 import pydash
 from bs4 import BeautifulSoup
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.common.exceptions import TimeoutException
 
-from covid19_scrapers.webdriver.driver_expected_conditions import NumberOfElementsIsGreaterOrEqualTo
-
+from covid19_scrapers.webdriver.driver_expected_conditions import (
+    NumberOfElementsIsGreaterOrEqualTo
+)
 
 _logger = logging.getLogger(__name__)
 

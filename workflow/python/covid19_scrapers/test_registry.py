@@ -2,9 +2,7 @@ from pathlib import Path
 
 from covid19_scrapers.registry import Registry
 from covid19_scrapers.scraper import ScraperBase
-from covid19_scrapers.utils.testing import (
-    FakeCensusApi, fake_webcache)
-
+from covid19_scrapers.utils.testing import fake_webcache, FakeCensusApi
 
 CENSUS_API = FakeCensusApi()
 

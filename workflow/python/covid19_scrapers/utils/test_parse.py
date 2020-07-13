@@ -1,6 +1,6 @@
 import pytest
 
-import covid19_scrapers.utils.parse as parse
+from covid19_scrapers.utils import parse as parse
 
 
 def test_raw_string_to_int():

@@ -1,11 +1,11 @@
 import logging
-import numpy as np
 import os
+
+import numpy as np
 import pandas as pd
 
-from covid19_scrapers.dir_context import dir_context
 from covid19_scrapers.census import get_aa_pop_stats
-
+from covid19_scrapers.dir_context import dir_context
 
 ERROR = 'An error occurred.'
 SUCCESS = 'Success!'

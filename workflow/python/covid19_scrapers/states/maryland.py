@@ -8,8 +8,7 @@ from covid19_scrapers.scraper import ScraperBase
 from covid19_scrapers.utils.html import table_to_dataframe
 from covid19_scrapers.utils.misc import to_percentage
 from covid19_scrapers.utils.parse import raw_string_to_int
-from covid19_scrapers.webdriver import WebdriverSteps, WebdriverRunner
-
+from covid19_scrapers.webdriver import WebdriverRunner, WebdriverSteps
 
 _logger = logging.getLogger(__name__)
 

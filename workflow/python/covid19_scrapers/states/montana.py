@@ -8,7 +8,6 @@ from covid19_scrapers.scraper import ScraperBase
 from covid19_scrapers.utils.html import url_to_soup
 from covid19_scrapers.utils.misc import to_percentage
 
-
 _logger = logging.getLogger(__name__)
 
 

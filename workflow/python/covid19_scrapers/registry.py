@@ -1,9 +1,9 @@
-from functools import reduce
 import logging
+from functools import reduce
+
 import pandas as pd
 
 from covid19_scrapers.utils import UTILS_WEB_CACHE
-
 
 _logger = logging.getLogger(__name__)
 

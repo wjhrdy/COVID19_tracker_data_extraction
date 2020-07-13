@@ -1,14 +1,14 @@
-from datetime import datetime
 import json
 import re
+from datetime import datetime
 
 import pydash
 from selenium.webdriver.common.by import By
 
 from covid19_scrapers.scraper import ScraperBase
 from covid19_scrapers.utils.misc import to_percentage
-from covid19_scrapers.utils.parse import raw_string_to_int, maybe_convert
-from covid19_scrapers.webdriver import WebdriverSteps, WebdriverRunner
+from covid19_scrapers.utils.parse import maybe_convert, raw_string_to_int
+from covid19_scrapers.webdriver import WebdriverRunner, WebdriverSteps
 
 
 class Iowa(ScraperBase):

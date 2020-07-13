@@ -1,7 +1,7 @@
 __all__ = ['UTILS_WEB_CACHE']
 
-from covid19_scrapers.web_cache import WebCache
 from covid19_scrapers.scoped_resource import ScopedResource
+from covid19_scrapers.web_cache import WebCache
 
 # Singleton WebCache for the routines in this file.
 # Set it using something like:

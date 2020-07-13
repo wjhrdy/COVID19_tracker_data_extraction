@@ -6,12 +6,11 @@ import re
 import pandas as pd
 
 from covid19_scrapers.census import get_aa_pop_stats
-from covid19_scrapers.utils.http import get_cached_url
-from covid19_scrapers.utils.parse import raw_string_to_int
-from covid19_scrapers.utils.misc import to_percentage
-from covid19_scrapers.utils.html import url_to_soup
 from covid19_scrapers.scraper import ScraperBase
-
+from covid19_scrapers.utils.html import url_to_soup
+from covid19_scrapers.utils.http import get_cached_url
+from covid19_scrapers.utils.misc import to_percentage
+from covid19_scrapers.utils.parse import raw_string_to_int
 
 _logger = logging.getLogger(__name__)
 

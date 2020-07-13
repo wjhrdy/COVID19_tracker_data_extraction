@@ -1,15 +1,14 @@
-import email.utils as eut
+import logging
+import os
+import ssl
+from email import utils as eut
 from io import BytesIO
 from pathlib import Path
-import os
-import logging
 from urllib.parse import urlsplit
 
 import requests
-import ssl
 
 from covid19_scrapers.utils import UTILS_WEB_CACHE
-
 
 ssl._create_default_https_context = ssl._create_unverified_context
 _logger = logging.getLogger(__name__)

@@ -4,7 +4,6 @@ import pandas as pd
 
 from covid19_scrapers.utils.http import get_content_as_file
 
-
 _logger = logging.getLogger(__name__)
 
 

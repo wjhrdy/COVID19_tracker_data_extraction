@@ -2,9 +2,9 @@ import logging
 
 from covid19_scrapers.scraper import ScraperBase
 from covid19_scrapers.utils.arcgis import (
-    make_geoservice_stat, query_geoservice)
+    make_geoservice_stat, query_geoservice
+)
 from covid19_scrapers.utils.misc import to_percentage
-
 
 _logger = logging.getLogger(__name__)
 _NE_SERVER_URL = 'https://gis.ne.gov/enterprise/rest/services/Covid19MapV5/MapServer'

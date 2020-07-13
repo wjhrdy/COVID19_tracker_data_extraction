@@ -8,7 +8,6 @@ from covid19_scrapers.utils.html import find_all_links
 from covid19_scrapers.utils.misc import to_percentage
 from covid19_scrapers.utils.zip import get_zip, get_zip_member_as_file
 
-
 _logger = logging.getLogger(__name__)
 
 

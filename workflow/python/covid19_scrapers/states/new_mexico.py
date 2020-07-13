@@ -6,7 +6,6 @@ from covid19_scrapers.scraper import ScraperBase
 from covid19_scrapers.utils.http import get_content, get_json
 from covid19_scrapers.utils.misc import to_percentage
 
-
 _logger = logging.getLogger(__name__)
 
 

@@ -1,14 +1,13 @@
 import datetime
 import logging
-import pandas as pd
 import re
 
 import fitz
+import pandas as pd
 from tabula import read_pdf
 
 from covid19_scrapers.scraper import ScraperBase
 from covid19_scrapers.utils.http import download_file
-
 
 _logger = logging.getLogger(__name__)
 

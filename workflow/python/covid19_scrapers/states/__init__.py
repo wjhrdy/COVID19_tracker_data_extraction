@@ -4,8 +4,8 @@ parent __init__.py
 
 """
 import importlib
-from pathlib import Path
 import re
+from pathlib import Path
 
 __all__ = []
 

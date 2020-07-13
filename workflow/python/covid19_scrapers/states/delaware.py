@@ -1,12 +1,11 @@
 import logging
-from datetime import datetime
 import re
+from datetime import datetime
 
 from covid19_scrapers.scraper import ScraperBase
 from covid19_scrapers.utils.html import table_to_dataframe, url_to_soup
 from covid19_scrapers.utils.misc import to_percentage
 from covid19_scrapers.utils.parse import raw_string_to_int
-
 
 _logger = logging.getLogger(__name__)
 

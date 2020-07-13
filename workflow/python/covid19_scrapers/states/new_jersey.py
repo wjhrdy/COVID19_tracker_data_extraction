@@ -1,13 +1,12 @@
-from io import BytesIO
 import logging
 import re
+from io import BytesIO
 
 import pandas as pd
 import requests
 
 from covid19_scrapers.scraper import ScraperBase
 from covid19_scrapers.utils.arcgis import query_geoservice
-
 
 _logger = logging.getLogger(__name__)
 

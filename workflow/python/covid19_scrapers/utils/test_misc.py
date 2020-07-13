@@ -1,4 +1,4 @@
-import covid19_scrapers.utils as utils
+from covid19_scrapers import utils as utils
 
 
 def test_as_list():

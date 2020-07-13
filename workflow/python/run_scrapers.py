@@ -6,9 +6,10 @@ the output to an Excel file.
 import argparse
 import datetime
 import logging
-import pandas as pd
-from pathlib import Path
 import sys
+from pathlib import Path
+
+import pandas as pd
 
 from covid19_scrapers import get_scraper_names, make_scraper_registry
 

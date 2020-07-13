@@ -4,8 +4,8 @@ import sqlite3
 import pytest
 import requests
 
+from covid19_scrapers.utils.testing import fake_webcache, MockSession
 from covid19_scrapers.web_cache import WebCache
-from covid19_scrapers.utils.testing import MockSession, fake_webcache
 
 
 def test_webcache_delete_uncached_fails():

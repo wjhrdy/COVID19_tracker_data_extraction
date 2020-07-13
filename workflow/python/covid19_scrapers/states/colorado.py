@@ -2,12 +2,11 @@ import datetime
 import logging
 import re
 
-from googleapiclient.discovery import build
 import pandas as pd
+from googleapiclient.discovery import build
 
 from covid19_scrapers.scraper import ScraperBase
 from covid19_scrapers.utils.misc import to_percentage
-
 
 _logger = logging.getLogger(__name__)
 
