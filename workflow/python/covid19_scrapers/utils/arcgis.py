@@ -77,7 +77,7 @@ def _get_layer(flc_id, flc_url, layer_name):
 
 def query_geoservice(*, flc_id=None, flc_url=None, layer_name=None,
                      where='1=1', out_fields=['*'], group_by=None,
-                     stats=None, order_by=None, limit=None):
+                     stats=None, order_by=None, limit=None, offset=None):
     """Queries the specified ESRI GeoService.
 
     Mandatory arguments:
@@ -110,6 +110,7 @@ def query_geoservice(*, flc_id=None, flc_url=None, layer_name=None,
         outStatistics=stats,
         orderByFields=order_by,
         resultRecordCount=limit,
+        resultOffset=offset,
         resultType='standard')
     try:
         update_date = datetime.datetime.fromtimestamp(
