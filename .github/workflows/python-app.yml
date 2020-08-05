@@ -35,7 +35,8 @@ jobs:
 
     - name: Lint with flake8
       run: |
-        flake8 workflow/python/covid19_scrapers/*.py
+        flake8 workflow/python/covid19_scrapers/**.py
+        flake8 workflow/python/run_scrapers.py
 
     - name: Test with pytest
       run: |
