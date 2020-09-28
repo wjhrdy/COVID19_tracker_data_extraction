@@ -57,6 +57,7 @@ dfCombined['Date/Time Run'].fillna(dfCombined['Date/Time Run.1'])
 # Delete duplicate columns
 del dfCombined['Date Run.1']
 del dfCombined['Date/Time Run.1']
+del dfCombined['Unnamed: 0']
 
 # Combined csv name
 date_object = datetime.now()
