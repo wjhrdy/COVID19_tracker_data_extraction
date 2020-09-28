@@ -47,6 +47,9 @@ for f in allFiles:
 
 dfCombined = pd.concat(csvList, ignore_index=True)
 
+# Reformat Dates
+dfCombined['Date Published'] = pd.to_datetime(dfCombined['Date Published'], errors='coerce')
+
 # Combined csv name
 date_object = datetime.now()
 date_object = datetime.strftime(date_object, '%Y-%m-%d %H.%M.%S')
