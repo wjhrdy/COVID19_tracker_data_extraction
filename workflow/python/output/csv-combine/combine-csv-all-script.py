@@ -50,6 +50,14 @@ dfCombined = pd.concat(csvList, ignore_index=True)
 # Reformat Dates
 dfCombined['Date Published'] = pd.to_datetime(dfCombined['Date Published'], errors='coerce')
 
+# Merge duplicate columns in NaN locations
+dfCombined['Date Run'].fillna(dfCombined['Date Run.1'])
+dfCombined['Date/Time Run'].fillna(dfCombined['Date/Time Run.1'])
+
+# Delete duplicate columns
+del dfCombined['Date Run.1']
+del dfCombined['Date/Time Run.1']
+
 # Combined csv name
 date_object = datetime.now()
 date_object = datetime.strftime(date_object, '%Y-%m-%d %H.%M.%S')
